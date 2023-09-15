@@ -1,0 +1,26 @@
+<h2>TO DO LIST</h2>
+
+<ul style="list-style:none;">
+  <li *ngFor="let item of todoList">
+    <input type="checkbox" [(ngModel)]="item.completed" > {{item.task}}
+    <!-- <div *ngIf="item.completed">(Completed)<br><br>
+      <span *ngIf="item.task==='swimming'">Venue1:{{item.venue1}}<br><br>Venue2:{{item.venue2}}</span>
+      <span *ngIf="item.task==='Breakfast'">Venue1:{{item.venue1}}<br><br>Venue2:{{item.venue2}}</span>
+      <span *ngIf="item.task==='College'">Venue1:{{item.venue1}}<br><br>Venue2:{{item.venue2}}</span>
+      <span *ngIf="item.task==='shopping'">Venue1:{{item.venue1}}<br><br>Venue2:{{item.venue2}}</span>
+      <span *ngIf="item.task==='dinner'">Venue1:{{item.venue1}}<br><br>Venue2:{{item.venue2}}</span>
+    </div> -->
+  </li>
+</ul>
+<ul style="list-style:none;">
+<li *ngFor="let item of todoList">
+<div *ngIf="item.completed">(Completed)<br><br>
+      <span *ngIf="item.task==='swimming'">Task:{{item.task}}<br><br>Venue1:{{item.venue1}}<br><br>Venue2:{{item.venue2}}</span>
+      <span *ngIf="item.task==='Breakfast'">Task:{{item.task}}<br><br>Venue1:{{item.venue1}}<br><br>Venue2:{{item.venue2}}</span>
+      <span *ngIf="item.task==='College'">Task:{{item.task}}<br><br>Venue1:{{item.venue1}}<br><br>Venue2:{{item.venue2}}</span>
+      <span *ngIf="item.task==='shopping'">Task:{{item.task}}<br><br>Venue1:{{item.venue1}}<br><br>Venue2:{{item.venue2}}</span>
+      <span *ngIf="item.task==='dinner'">Task:{{item.task}}<br><br>Venue1:{{item.venue1}}<br><br>Venue2:{{item.venue2}}</span>
+    </div>
+  </li>
+</ul>
+
